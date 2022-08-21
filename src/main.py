@@ -56,7 +56,7 @@ def login():
 
     if not check_password_hash(user.password, password): return jsonify({ "msg" : "Usuario y/o contraseña no se encuentra/n"})
 
-    expire= datetime.timedelta(days=3)
+    expire= datetime.timedelta(minutes=1)
 
     print(expire)
 
